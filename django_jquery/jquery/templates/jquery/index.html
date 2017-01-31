@@ -1,9 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Jquery Django Tutorial</title>
 </head>
 <body>
-Hello Jquery
+	<h1>Example 1</h1>
+	<p class="para">If you click on me, I will disappear.</p>
+	<p class="para">Click me away!</p>
+	<p class="para">Click me too!</p>
+	<p>I can be hidden!!!</p>
+	<br><hr>
+	<br><hr>
+
+	<p id="test1">This is a <b>bold</b> paragraph.</p>
+	<p id="test2">This is another <b>bold</b> paragraph.</p>
+	<button id="btn1">Show Old/New Text</button>
+	<button id="btn2">Show Old/New HTML</button>
+	<br><hr>
+	<br><hr>
+
+	<p><a href="http://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+	<button id="nbt1">Change href Value</button>
+	<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+	<br><hr>
+	<br><hr>
+
+	<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+		This is some text in the div.
+		<p>This is a paragraph in the div.</p>
+		<p>This is another paragraph in the div.</p>
+	</div>
+	<br>
+	<button id="nbt2">Empty the div element</button>
+
+
+	<!-- Jquery files are added in bottom of body bcz its helps fast execution -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="{% static 'example1.js' %}"></script>
 </body>
 </html>
